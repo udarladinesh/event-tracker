@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Personal Expense Tracker</h2>
+
+<div class="box">
+
+<h3>Set Budget</h3>
+<input type="number" id="budgetInput" placeholder="Enter monthly budget">
+<button onclick="setBudget()">Set Budget</button>
+
+<h3>Add Expense</h3>
+
+<select id="category">
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+<option>Bills</option>
+<option value="Other">Other</option>
+</select>
+
+<input type="text" id="customCategory" placeholder="Enter category (if Other)">
+
+<input type="number" id="amount" placeholder="Enter amount">
+
+<button onclick="addExpense()">Add Expense</button>
+
+<h3>Expenses</h3>
+
+<ul id="expenseList"></ul>
+
+<p>Total Expense: ₹ <span id="total">0</span></p>
+<p>Remaining Budget: ₹ <span id="remaining">0</span></p>
+
+<h3>Category Summary</h3>
+<p id="summary"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
